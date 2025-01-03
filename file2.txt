@@ -1,2 +1,1 @@
-dhfhfhwsadkjlf
-:wq
+this is file2.txt
