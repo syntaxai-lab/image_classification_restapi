@@ -1,0 +1,9 @@
+flask
+flask_restful
+bcrypt
+pymongo
+numpy
+keras
+
+
+
