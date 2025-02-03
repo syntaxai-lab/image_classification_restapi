@@ -1,0 +1,11 @@
+services:
+  app:
+    build: 
+      context: app/
+    ports:
+      - "8000:5000"
+    command: python app.py
+  database:
+    image: mongo:latest
+    ports: 
+      - "27017:27017"
