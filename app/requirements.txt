@@ -1,9 +1,12 @@
-flask
-flask_restful
-bcrypt
-pymongo
-numpy
-keras
+tensorflow==2.15.0 
+keras==2.15.0  
+Flask==3.0.0  
+flask-cors==4.0.0  
+gunicorn==21.2.0 
+Pillow==10.3.0  
+numpy==1.26.4  
+opencv-python==4.9.0.80
+
 
 
 

@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   app:
     build: 
@@ -5,7 +7,11 @@ services:
     ports:
       - "8000:5000"
     command: python app.py
-  database:
-    image: mongo:latest
-    ports: 
-      - "27017:27017"
+    environment:
+      - ENV=production
+      - MODEL_PATH=/app/models/model.h5
+    volumes:
+      - ./app:/app
+      - ./models:/app/models
+    restart: always
+
